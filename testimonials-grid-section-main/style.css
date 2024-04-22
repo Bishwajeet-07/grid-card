@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Moderateviolet: hsl(263, 55%, 52%) ;
+    --Verydarkgrayish-blue: hsl(217, 19%, 35%) ;
+    --Verydark-blackishblue: hsl(219, 29%, 14%) ;
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed",sans-serif;
+    color: white;
+    background-color: var(--Light-grayish-blue);
+}
+
+main{
+    padding: 2rem;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.6rem;
+    max-width: 1300px;
+    margin-inline: auto;
+}
+
+
+.box{
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+
+.box1{
+    grid-column: span 2;
+    background: url("./images/bg-pattern-quotation.svg") no-repeat;
+    background-size: 130px;
+    background-position: right;
+    background-position-y: 0;
+    background-position-x: 80%;
+    background-color: var(--Moderateviolet);
+
+}
+.box1 .title img{
+    border: 3px solid hsla(300, 82%, 78%, 0.776);
+}
+.box2 .title img{
+    border: 3px solid hsla(300, 9%, 98%, 0.776);
+}
+.box5 .title img{
+    border: 3px solid hsla(300, 94%, 58%, 0.776);
+}
+
+
+
+.box2{
+    background-color:var(--Verydarkgrayish-blue);
+}
+.box3{
+    color: black;
+    background-color: var(--White);
+    grid-row: span 2;
+}
+.box3 .title h2 , .box4 .title h2{
+    color: var(--Verydark-blackishblue) !important;
+}
+.box3 .card-para , .box4 .card-para{
+    color: var(--Verydarkgrayish-blue) !important;
+
+}
+.box3 .title h2 , .box4 .title h2{
+    color: var(--Verydark-blackishblue) !important;
+}
+
+.box3,.box4{
+    box-shadow:  2px 3px 10px rgba(0, 0, 0, 0.21);
+}
+
+.box4{
+    color: black;
+}
+
+.box5{
+    background-color: var(--Verydark-blackishblue);
+    grid-column: span 2;
+}
+
+
+.box .title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+.box .title img{
+    border-radius: 50%;
+    margin-right: 1rem;
+    height: 40px;
+}
+
+.box .title h2{
+    color: var(--Light-grayish-blue);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.box .title h3{
+    color: var(--Light-gray);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card-title{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card-para{
+    color: var(--Light-gray);
+    font-size: 1rem;
+}
+
